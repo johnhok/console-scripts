@@ -1,11 +1,3 @@
-(function restoreConsole() {
-  var iframe = document.createElement("iframe");
-  iframe.style.display = "none";
-  document.body.appendChild(iframe);
-  console = iframe.contentWindow.console;
-  window.console = console;
-})();
-
 await (async function bootstrap() {
   const restoreConsole = () => {
     var iframe = document.createElement("iframe");
